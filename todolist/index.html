@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="nav">
+        <div class="nav1">
+            <a href="#"><img src="profil.jpg" alt=""></a>
+            <h3>To Do List</h3>
+        </div>
+        <div class="nav2">
+            <span id="points">Points: 0</span>
+            <span id="level">Level: 1 (Newbie)</span>
+        </div>
+    </div>
+    <div class="container">
+        <h1>To Do List</h1>
+        <div class="input-grup">
+            <input type="text" id="taskInput" placeholder="Masukan judul dari list mu...">
+            <input type="date" id="dateInput">
+            <input type="time" id="timeInput">
+            <button id="addButton" onclick="addTask()">Tambahkan List</button>
+        </div>
+        <div class="list">
+            <input type="checkbox" id="notifikasi" onclick="notifikasi()"> Enable Notifications
+            <ul id="List"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
